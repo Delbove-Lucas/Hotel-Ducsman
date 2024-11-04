@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<main>
+    <header></header>
+    <section class="form">
+        <h2>Duscman</h2>
+        <section class="contact-duscman">
+            <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou pour vous préparer le plus
+                luxueux des voyages.</p>
+            <br>
+            <p>Informations & Reservation</p>
+            <a href="tel:0320010203">03 20 01 02 03</a>
+            <br>
+            <p>Informations & Reservation</p>
+            <a href="info@duscman-group.com">info@duscman-group.com</a>
+            <br>
+            <p>Adresse</p>
+            <address title="adresse" style="cursor:default;">75001Paris</address>
+        </section>
+        <section class="contact-form">
+            <h2>Restons en contact</h2>
+            <form action="/submit" method="post">
+                <label for="nom"></label>
+                <input type="text" id="nom" name="nom" pattern="[a-z][A-Z]" required placeholder="Votre nom *">
+
+                <label for="email"></label>
+                <input type="email" id="email" pattern=".+@example\.com" required placeholder="Votre e-mail *">
+                <br>
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                    placeholder="Votre numéro de téléphone *" />
+
+                <input type="text" id="sujet" name="sujet" pattern="[a-z][A-Z]" required placeholder="Sujet *">
+                <label for="sujet"></label>
+                <br>
+
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="5" cols="49">Message *
+                </textarea>
+                <br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </section>
+    <section class="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8353821789824!2d2.2889342757311844!3d48.8613494004994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1730719418005!5m2!1sfr!2sfr"
+            width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer>
+            <section class="a propos">
+                <h2>A propos de notre hôtel</h2>
+                <p>Le seul hôtel 5 étoiles de Paris. Elementum esseu the aucan lvestane aliquam uso in the sapien
+                    rutrum.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi modi deleniti ullam, quo
+                    doloremque laboriosam vel natus sed illum commod fugit iure dolores autem maxime odio voluptatem
+                    debitis beatae distinctio.</p>
+            </section>
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul style="list-style-type:none;">
+                    <li>23 avenue des Nations Unies</li>
+                    <li>750001 Paris</li>
+                    <li>03 20 01 02 03</li>
+                    <li>info@ducsman.com</li>
+                    <li>logos</li>
+                </ul>
+            </section>
+            <p>Mentions légales - Conditions Générales de Ventes - &copy; Copiright 2023 - Ducsman Group</p>
+        </footer>
+    </section>
+</main>
+
+</html>
