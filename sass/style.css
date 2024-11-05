@@ -95,7 +95,8 @@ body main {
   max-width: 100%;
 }
 body main .img-header {
-  background-image: url(../../assets/images/slider/2.jpg);
+  height: 700px;
+  background-image: url(../../images/slider/2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,6 +178,26 @@ h3,
   display: inline-block;
   align-items: center;
   gap: 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+body .main-content {
+  margin-left: 250px;
+  padding: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
