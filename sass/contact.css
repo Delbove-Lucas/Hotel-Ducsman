@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+.sidebar {
+  min-width: 450px;
+  min-height: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 10px;
+}
+.sidebar .star {
+  text-align: center;
+  color: #E4A853;
+  margin-top: 50px;
+}
+.sidebar .logo {
+  color: #E4A853;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.sidebar .slogan {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1em;
+  letter-spacing: 6px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.sidebar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+}
+.sidebar .nav-links {
+  margin-top: 30px;
+  margin-left: 65px;
+  text-decoration: none;
+  color: #7C7C7C;
+  font-size: 1.2em;
+  font-family: "Bricolage Grotesque", sans-serif;
+  transition: 300ms ease-out;
+}
+.sidebar .nav-links:hover {
+  color: #E4A853;
+}
+.sidebar .contact-info {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.sidebar .contact-info h2 {
+  font-size: 1em;
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: 1px;
+  margin-left: 50px;
+}
+.sidebar .contact-info p {
+  font-size: 2em;
+  color: #E4A853;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.sidebar .contact-info .flaticon-call {
+  font-size: 1.3em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+body main .img-header {
+  background-image: url(../../assets/images/slider/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .ti-star {
+  text-align: center;
+  color: #c2a505;
+  font-size: 1.2em;
+}
+body main .carouselle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .container {
+  background-color: #222222;
+}
+body main .infos-rooms {
+  background-color: #1E1E1E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+body .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=contact.css.map */

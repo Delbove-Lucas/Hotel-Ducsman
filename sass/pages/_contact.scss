@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -17,3 +18,39 @@ body {
     padding: 2;
   }
 }
+||||||| 376d4d9
+* {
+    margin: 0%;
+}
+
+main {
+    background-color: #222222;
+}
+
+.mention {
+    background-color: #1e1e1e;
+}
+
+.mention>p {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: #8c8c8c;
+}
+
+a {
+    color: #aa8453;
+}
+
+iframe {
+    display: flex;
+    filter: grayscale(100%);
+}
+=======
+>>>>>>> refs/remotes/origin/main
