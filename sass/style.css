@@ -4,8 +4,37 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+body main .img-header {
+  background-image: url(../../assets/images/slider/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .ti-star {
+  text-align: center;
+  color: #c2a505;
+  font-size: 1.2em;
+}
+body main .carouselle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .container {
+  background-color: #222222;
+}
+body main .infos-rooms {
+  background-color: #1E1E1E;
 }
 
 /*# sourceMappingURL=style.css.map */
