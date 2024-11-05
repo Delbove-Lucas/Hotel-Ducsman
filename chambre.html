@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chambre</title>
-    <link rel="stylesheet" href="Assets/css/flaticons.css">
-    <link rel="stylesheet" href="Assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flaticons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="sass/chambre.css">
 </head>
 
 <body>
+    <header>
 
-    <header></header>
+    </header>
     <main>
         <article>
             <header>
-                <i class="ti-star"></i>
-                <i class="ti-star"></i>
-                <i class="ti-star"></i>
-                <i class="ti-star"></i>
-                <i class="ti-star"></i>
-                <p>Hotel de luxe à Paris</p>
-                <img src="Assets/images/rooms/4.jpg" alt="chambre">
-                <p>Chambre Deluxe</p>
-            </header>
-            <section id="chambre deluxe">
-                <p>Ducsman</p>
+                <div class="doré">
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                </div>
+                <h3>Hotel de luxe à Paris</h3>
+                <img src="assets/images/rooms/4.jpg" alt="chambre">
                 <h1>Chambre Deluxe</h1>
-                <p>Notre chambre Deluxe offre un niveau de confort et de luxe supérieur aux chambres standard de
+            </header>
+            <section id="chambre-deluxe">
+                <p class="doré">Ducsman</p>
+                <h1>Chambre Deluxe</h1>
+                <p class="texte">Notre chambre Deluxe offre un niveau de confort et de luxe supérieur aux chambres
+                    standard de
                     l'hôtel. Elle est plus spacieuse que les chambres standards, offrant plus d'espace pour se détendre
                     et se déplacer confortablement.
 
@@ -46,46 +51,49 @@
                 </p>
             </section>
             <section id="aménagements">
+                <h2>Aménagements</h2>
                 <ul style="list-style-type:none;">
-                    <h2>Aménagements</h2>
-                    <li><i class="flaticon-group"></i> 1-2 Personnes</li>
-                    <li><i class="flaticon-wifi"></i> Wifi haut-débit gratuit</li>
-                    <li><i class="flaticon-clock-1"></i> 20 m²</li>
-                    <li><i class="flaticon-breakfast"></i> Petit-déjeuner buffet inclus</li>
-                    <li><i class="flaticon-towel"></i> Serviettes fournies</li>
-                    <li><i class="flaticon-swimming"></i> Accès à la piscine inclus</li>
+                    <li class="texte"><i class="flaticon-group"></i> 1-2 Personnes</li>
+                    <li class="texte"><i class="flaticon-wifi"></i> Wifi haut-débit gratuit</li>
+                    <li class="texte"><i class="flaticon-clock-1"></i> 20 m²</li>
+                    <li class="texte"><i class="flaticon-breakfast"></i> Petit-déjeuner buffet inclus</li>
+                    <li class="texte"><i class="flaticon-towel"></i> Serviettes fournies</li>
+                    <li class="texte"><i class="flaticon-swimming"></i> Accès à la piscine inclus</li>
                 </ul>
             </section>
             <section id="check-in">
+                <h2>Check-in</h2>
                 <ul style="list-style-type:none;">
-                    <h2>Check-in</h2>
-                    <li><i class="ti-check"></i> Check-in à partir de 9h00</li>
-                    <li><i class="ti-check"></i> Check-in en ligne possible</li>
+                    <li class="texte"><i class="ti-check"></i> Check-in à partir de 9h00</li>
+                    <li class="texte"><i class="ti-check"></i> Check-in en ligne possible</li>
                 </ul>
             </section>
             <section id="check-out">
+                <h2>Check-out</h2>
                 <ul style="list-style-type:none;">
-                    <h2>Check-out</h2>
-                    <li><i class="ti-check"></i> Avant 12h00</li>
-                    <li><i class="ti-check"></i> Check-out Express (supplément)</li>
+                    <li class="texte"><i class="ti-check"></i> Avant 12h00</li>
+                    <li class="texte"><i class="ti-check"></i> Check-out Express (supplément)</li>
                 </ul>
             </section>
             <section id="instructions">
                 <h2>Instructions pour le check-in</h2>
-                <p>Les invités reçoivent un email 5 jours avant l'arrivée prévue avec toutes les informations
+                <p class="texte">Les invités reçoivent un email 5 jours avant l'arrivée prévue avec toutes les
+                    informations
                     nécessaires. Nos hôtes et hôtesses d'accueil pourront vous donner plus d'informations, n'hésitez pas
                     à les contacter avant votre arrivée.</p>
                 <h2>Animaux de compagnie</h2>
-                <p>Pour le confort de tous, ils ne sont pas acceptés au sein de nos chambres.</p>
+                <p class="texte">Pour le confort de tous, ils ne sont pas acceptés au sein de nos chambres.</p>
                 <h2>Enfants/bébés et lit supplémentaire</h2>
-                <p>Les enfants sont les bienvenus et les bébés de moins de 2 ans sont accueillis gratuitement. Un lit
+                <p class="texte">Les enfants sont les bienvenus et les bébés de moins de 2 ans sont accueillis
+                    gratuitement. Un lit
                     bébé peut vous être fourni gracieusement sur demande lors de votre réservation.</p>
-                <input type="button" value="RESERVER MAINTENANT">
+                <input type="button" value="RESERVER MAINTENANT" class="réserver">
             </section>
             <footer>
-                <section id="a propos">
+                <section id="à-propos">
                     <h2>A propos de notre hôtel</h2>
-                    <p>Le seul hôtel 5 étoiles de Paris. Elementum esseu the aucan lvestane aliquam uso in the sapien
+                    <p class="texte">Le seul hôtel 5 étoiles de Paris. Elementum esseu the aucan lvestane aliquam uso in
+                        the sapien
                         rutrum.
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi modi deleniti ullam, quo
                         doloremque laboriosam vel natus sed illum commod fugit iure dolores autem maxime odio voluptatem
@@ -94,28 +102,23 @@
                 <section id="contact">
                     <h2>Contact</h2>
                     <ul style="list-style-type:none;">
-                        <li>23 avenue des Nations Unies</li>
-                        <li>750001 Paris</li>
-                        <span class="num"><i class="flaticon-call"></i> 03 20 01 02 03</span>
-                        <li>info@ducsman.com</li>
-                        <div class="logos">
-                            <i class="ti-instagram"></i>
-                            <i class="ti-twitter"></i>
-                            <i class="ti-youtube"></i>
-                            <i class="ti-facebook"></i>
-                            <i class="ti-pinterest"></i>
-                        </div>
+                        <li class="texte">23 avenue des Nations Unies</li>
+                        <li class="texte">750001 Paris</li>
+                        <li class="num"><i class="flaticon-call"></i> 03 20 01 02 03</li>
+                        <li class="texte">info@ducsman.com</li>
                     </ul>
+                    <div class="logos">
+                        <i class="ti-instagram"></i>
+                        <i class="ti-twitter"></i>
+                        <i class="ti-youtube"></i>
+                        <i class="ti-facebook"></i>
+                        <i class="ti-pinterest"></i>
+                    </div>
                 </section>
             </footer>
         </article>
     </main>
     <footer></footer>
-
-
-
-
-
 
 </body>
 
