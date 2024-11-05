@@ -1,21 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 body{
-  padding: 0;
-  margin: 0;
 
   main{
+    max-width: 100%;
 
     .img-header{
       background-image: url(../../assets/images/slider/2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 800px;
-      width: 100%;
       @include flex-collum
     }
 
@@ -35,6 +27,26 @@ body{
 
     .infos-rooms{
       background-color: #1E1E1E;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      text-align: start;
+      justify-content: space-around;
+      padding: 20px;
+
+      .into-para{
+        width: 50%;
+      }
+      .into-img{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        .img-into{
+          width: 200px;
+        }
+      }
     }
   }
 }
