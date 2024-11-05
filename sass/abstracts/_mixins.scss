@@ -4,8 +4,21 @@
   justify-content: center;
   flex-direction: column;
 }
+
+@mixin flex-row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 @mixin flex{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-collum-start{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
