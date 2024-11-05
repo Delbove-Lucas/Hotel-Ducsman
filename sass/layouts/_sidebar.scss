@@ -1,161 +1,72 @@
-<<<<<<< HEAD
-@use "../abstracts/variables";
-@use "../abstracts/mixins";
-
 .sidebar {
-  background-color: variables.$secondary-color;
-  color: variables.$text-color;
-  width: 250px;
-  padding: variables.$spacing-unit * 2;
-  position: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-width: 450px;
+  min-height: 100%;
+  background-color: $sidebar-color;
+  color: white;
+  padding: 10px;
+
+  .star {
+    text-align: center;
+    color: #E4A853;
+    margin-top: 50px;
+
+  }
 
   .logo {
-    font-size: 1.5rem;
-    color: variables.$primary-color;
-    margin-bottom: variables.$spacing-unit / 2;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #E4A853;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
   }
 
   .slogan {
-    font-size: 0.9rem;
-    color: lighten(variables.$primary-color, 20%);
-    margin-bottom: variables.$spacing-unit * 2;
-    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1em;
+    letter-spacing: 6px;
+    font-family: "Bricolage Grotesque", sans-serif;
+
   }
 
   .menu {
-    flex: 1;
+    @include flex-collum-start;
+    text-decoration: none;
+  }
 
-    ul {
-      list-style: none;
-      padding: 0;
+  .nav-links {
+    margin-top: 30px;
+    margin-left: 65px;
+    text-decoration: none;
+    color: #7C7C7C;
+    font-size: 1.2em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    transition: 300ms ease-out;
+  }
 
-      li {
-        margin-bottom: variables.$spacing-unit;
-
-        a {
-          color: variables.$text-color;
-          text-decoration: none;
-          font-size: 1rem;
-          padding: variables.$spacing-unit / 2;
-          display: block;
-          @include mixins.transition(color);
-
-          &:hover {
-            color: variables.$primary-color;
-          }
-
-          &.active {
-            color: variables.$primary-color;
-            font-weight: bold;
-          }
-        }
-      }
-    }
+  .nav-links:hover {
+    color: #E4A853;
   }
 
   .contact-info {
-    margin-top: variables.$spacing-unit * 2;
-    border-top: 1px solid lighten(variables.$secondary-color, 10%);
-    padding-top: variables.$spacing-unit;
+    margin-top: 100px;
+    margin-left: 50px;
 
     h2 {
-      font-size: 1rem;
-      color: variables.$primary-color;
-      margin-bottom: variables.$spacing-unit / 2;
+      font-size: 1em;
+      font-family: "Bricolage Grotesque", sans-serif;
+      letter-spacing: 1px;
+      margin-left: 50px;
     }
 
     p {
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      color: variables.$text-color;
+      font-size: 2em;
+      color: #E4A853;
+      font-family: "Bricolage Grotesque", sans-serif;
+    }
 
-      i {
-        margin-right: variables.$spacing-unit / 2;
-        font-size: 1.2rem;
-        color: variables.$primary-color;
-      }
+    .flaticon-call {
+      font-size: 1.3em;
     }
   }
 }
-||||||| 376d4d9
-=======
-.sidebar{
-    min-width: 450px;
-    min-height: 100%;
-    background-color: $sidebar-color;
-    color: white;
-    padding: 10px;
-
-    .star{
-      text-align: center;
-      color: #E4A853;
-      margin-top: 50px;
-      
-    }
-
-    .logo{
-      color: #E4A853;
-      text-align: center;
-      font-size: 2.5em;
-      font-family: "Playfair Display", serif;
-      font-weight: 400;
-    }
-
-    .slogan{
-      text-align: center;
-      margin-bottom: 50px;
-      font-size: 1em;
-      letter-spacing: 6px;
-      font-family: "Bricolage Grotesque", sans-serif;
-
-    }
-
-    .menu{
-      @include flex-collum-start;
-      text-decoration: none;
-    }
-
-    .nav-links{
-      margin-top: 30px;
-      margin-left: 65px;
-      text-decoration: none;
-      color: #7C7C7C;
-      font-size: 1.2em;
-      font-family: "Bricolage Grotesque", sans-serif;
-      transition: 300ms ease-out;
-    }
-
-    .nav-links:hover{
-      color: #E4A853;
-    }
-
-    .contact-info{
-      margin-top: 100px;
-      margin-left: 50px;
-
-      h2{
-        font-size: 1em;
-        font-family: "Bricolage Grotesque", sans-serif;
-        letter-spacing: 1px;
-        margin-left: 50px;
-      }
-
-      p{
-        font-size: 2em;
-        color: #E4A853;
-        font-family: "Bricolage Grotesque", sans-serif;
-      }
-
-      .flaticon-call{
-        font-size: 1.3em;
-      }
-    }
-  }
->>>>>>> refs/remotes/origin/main
