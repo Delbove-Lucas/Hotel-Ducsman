@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/flaticons.css">
-    <link rel="stylesheet" href="./css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flaticons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="./sass/style.css">
     <title>Contact - Ducsman</title>
 </head>
@@ -37,41 +37,70 @@
     </aside>
 
     <main class="main-content">
-        <section class="contact-info-section">
-            <h2>Ducsman</h2>
-            <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou pour vous préparer le plus
-                luxueux des voyages.</p>
-            <h3>Informations & Réservation</h3>
-            <p><i class="flaticon-call"></i> 03 20 01 02 03</p>
-            <p><i class="flaticon-envelope"></i> <a href="mailto:info@ducsman-group.com">info@ducsman-group.com</a></p>
-            <h3>Adresse</h3>
-            <address>
-                23 avenue des Nations Unies<br>
-                75001 Paris
-            </address>
-        </section>
+        <div class="flex-contact">
+            <section class="contact-info-section">
+                <h2>Ducsman</h2>
+                <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou pour vous préparer le
+                    plus luxueux des voyages.</p>
 
-        <section class="contact-form-section">
-            <h2>Restons en contact</h2>
-            <form action="/submit" method="post">
-                <label for="nom">Votre nom *</label>
-                <input type="text" id="nom" name="nom" required placeholder="Votre nom *">
+                <div class="contact-item">
+                    <i class="flaticon-call"></i>
+                    <div>
+                        <h3>Informations & Réservation</h3>
+                        <p>03 20 01 02 03</p>
+                    </div>
+                </div>
 
-                <label for="email">Votre e-mail *</label>
-                <input type="email" id="email" name="email" required placeholder="Votre e-mail *">
+                <div class="contact-item">
+                    <i class="flaticon-envelope"></i>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:info@ducsman-group.com">info@ducsman-group.com</a></p>
+                    </div>
+                </div>
 
-                <label for="phone">Votre numéro de téléphone *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="Votre numéro de téléphone *">
+                <div class="contact-item">
+                    <i class="flaticon-location"></i>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p>23 avenue des Nations Unies<br>75001 Paris</p>
+                    </div>
+                </div>
+            </section>
 
-                <label for="sujet">Sujet *</label>
-                <input type="text" id="sujet" name="sujet" required placeholder="Sujet *">
+            <section class="contact-form-section">
+                <h2>Restons en contact</h2>
+                <form class="form-contact" action="/submit" method="post">
+                    <div class="form-field">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Votre nom *">
+                    </div>
 
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Votre message ici"></textarea>
+                    <div class="form-field">
+                        <label for="email">Votre e-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="Votre e-mail *">
+                    </div>
 
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+                    <div class="form-field">
+                        <label for="phone">Votre numéro de téléphone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Votre numéro de téléphone *">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" name="sujet" required placeholder="Sujet *">
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Votre message ici"></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </div>
 
         <section class="map-section">
             <iframe
@@ -80,34 +109,40 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <footer>
-            <section class="about">
-                <h2>À propos de notre hôtel</h2>
-                <p>Le seul hôtel 5 étoiles de Paris. Elementum esseu the aucan lvestane aliquam uso in the sapien
-                    rutrum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi modi deleniti ullam, quo
-                    doloremque laboriosam vel natus sed illum commod fugit iure dolores autem maxime odio voluptatem
-                    debitis beatae distinctio.</p>
-            </section>
-            <section class="footer-contact">
-                <h2>Contact</h2>
-                <address>
-                    23 avenue des Nations Unies<br>
-                    75001 Paris
-                </address>
-                <p><i class="flaticon-call"></i> 03 20 01 02 03</p>
-                <p><i class="flaticon-envelope"></i> <a href="mailto:info@ducsman.com">info@ducsman.com</a></p>
-                <div class="social-media">
-                    <i class="ti-instagram"></i>
-                    <i class="ti-twitter"></i>
-                    <i class="ti-youtube"></i>
-                    <i class="ti-facebook"></i>
-                    <i class="ti-pinterest"></i>
-                </div>
-            </section>
-            <section class="legal">
-                <p>Mentions légales - Conditions Générales de Vente - Politique de confidentialité - &copy; Copyright
+        <footer class="footer">
+            <div class="footer-content">
+                <section class="about">
+                    <h2>À propos de notre hôtel</h2>
+                    <p>Le seul hôtel 5 étoiles de Paris. Elementum esseu the aucan lvestane aliquam uso in the sapien
+                        rutrum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi modi deleniti ullam, quo
+                        doloremque laboriosam vel natus sed illum commod fugit iure dolores autem maxime odio voluptatem
+                        debitis beatae distinctio.</p>
+                </section>
+
+                <section class="footer-contact">
+                    <h2>Contact</h2>
+                    <address>
+                        23 avenue des Nations Unies<br>
+                        75001 Paris
+                    </address>
+                    <p><i class="flaticon-call"></i> 03 20 01 02 03</p>
+                    <p><i class="flaticon-envelope"></i> <a href="mailto:info@ducsman.com">info@ducsman.com</a></p>
+                    <div class="social-media">
+                        <i class="ti-instagram"></i>
+                        <i class="ti-twitter"></i>
+                        <i class="ti-youtube"></i>
+                        <i class="ti-facebook"></i>
+                        <i class="ti-pinterest"></i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="legal">
+                <p class="mention">Mentions légales - Conditions Générales de Vente - Politique de confidentialité -
+                    &copy; Copyright
                     2023 - Ducsman Group</p>
-            </section>
+            </div>
         </footer>
     </main>
 </body>
