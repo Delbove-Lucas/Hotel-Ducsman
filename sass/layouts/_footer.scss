@@ -13,7 +13,7 @@ footer {
     }
 
     .legal {
-        width: 111%;
+        width: 100%;
         text-align: center;
         font-size: 0.8em;
         color: #777;
@@ -35,7 +35,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 1200px;
+        max-width: 100%;
         padding-bottom: 20px;
 
         .about,

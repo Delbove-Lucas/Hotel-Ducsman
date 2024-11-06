@@ -1,9 +1,11 @@
-body{
 
   .main-index{
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
     .img-header{
+      max-width: 100%;
       height: 800px;
       background-image: url(../../images/slider/2.jpg);
       background-position: center;
@@ -52,7 +54,6 @@ body{
       flex-direction: row;
       align-items: center;
       height: 600px;
-      padding: 20px;
 
       .into-para{
 
@@ -63,12 +64,14 @@ body{
           color: #FFF;
           font-family: $primary-font;
           margin-top: 20px;
-          letter-spacing: 5px;
+          margin-left: 5px;
+          letter-spacing: 8px;
           color: $primary-color;
         }
 
         .title-container{
-          font-size: 3em;
+          font-size: 2.8em;
+          font-weight: 300;
           font-family: $secondary-font;
           letter-spacing: 2px;
           color: #FFF;
@@ -104,5 +107,82 @@ body{
         }
       }
     }
+
+    .infos-rooms{
+
+      max-width: 100vw;
+      .title-rooms{
+        margin-left: 130px;
+        margin-top: 80px;
+
+        h5{
+          font-size: 1em;
+          color: #FFF;
+          font-family: $primary-font;
+          margin-left: 5px;
+          letter-spacing: 10px;
+          color: $primary-color;
+        }
+  
+        h2{
+          font-size: 2.8em;
+          font-family: $secondary-font;
+          font-weight: 300;
+          letter-spacing: 2px;
+          color: #FFF;
+        }
+      }      
+      
+
+      .rooms-img-top{
+        @include flex-row;
+        gap: 100px;
+        margin-top: 50px;
+
+        .img-1{
+          background-image: url(../../images/rooms/1.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 400px;
+        }
+
+        .img-2{
+          background-image: url(../../images/rooms/2.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 400px;
+        }
+
+        .img-3{
+          background-image: url(../../images/rooms/3.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 400px;
+        } 
+      }
+
+      .room-img-bottom{
+        @include flex-row;
+        gap: 30px;
+        margin-top: 30px;
+        .img-4{
+          background-image: url(../../images/rooms/4.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 535px;
+          height: 300px;
+        }
+
+        .img-5{
+          background-image: url(../../images/rooms/7.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 535px;
+          height: 300px;
+        }
+      }
+    }
   }
-}
