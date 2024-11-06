@@ -1,7 +1,6 @@
 .main-content {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
     width: 100%;
     background-color: #222;
     color: #ddd;
@@ -122,9 +121,8 @@
 }
 
 .map-section {
-    width: 150%;
-    margin: 20px 0;
-    padding-left: 5px;
+    @include flex;
+
 
     iframe {
         width: 66%;
