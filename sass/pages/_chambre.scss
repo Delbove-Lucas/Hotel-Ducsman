@@ -1,82 +1,92 @@
-h1,
-h2,
-h3,
-.ti-facebook,
-.ti-instagram,
-.ti-twitter,
-.ti-youtube,
-.ti-pinterest {
-    color: white;
-}
+body {
 
-.doré,
-.flaticon-group,
-.flaticon-wifi,
-.flaticon-clock-1,
-.flaticon-breakfast,
-.flaticon-towel,
-.flaticon-swimming,
-.ti-check {
-    color: #6E583B;
-}
+    .main-chambre {
 
-.texte {
-    color: #838383;
-}
+        article {
 
-#check-in,
-#check-out {
-    display: inline-block;
-    align-items: center;
-    gap: 100;
-    margin: 100px;
+            header {
+                .chambre1 {
+                    width: 100%;
+                    height: 900px;
+                    background-image: url(../../images/rooms/4.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex-collum;
+                }
 
-}
+            }
 
-#check-in ::after {
-    content: "";
-    display: block;
-    height: 5px;
-}
+        }
 
-#check-out ::after {
-    content: "";
-    display: block;
-    height: 5px;
-}
+        h1,
+        h2,
+        h3,
+        .ti-facebook,
+        .ti-instagram,
+        .ti-twitter,
+        .ti-youtube,
+        .ti-pinterest {
+            color: white;
+        }
 
-.image-de-chambre {
-    height: 900px;
-    background-image: url(../../images/rooms/4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flex-collum
-}
+        .doré,
+        .flaticon-group,
+        .flaticon-wifi,
+        .flaticon-clock-1,
+        .flaticon-breakfast,
+        .flaticon-towel,
+        .flaticon-swimming,
+        .ti-check {
+            color: #6E583B;
+        }
 
-.étage1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.chambre-deluxe,
-.aménagements {
-    padding: 20px;
-    margin: 100px;
-}
-
-.check {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
+        .texte {
+            color: #838383;
+        }
 
 
-.instructions {
-    display: inline-block;
-    align-items: center;
-    margin: 100px;
+
+        .étage1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .chambre-deluxe,
+        .aménagements {
+            padding: 20px;
+            margin: 100px;
+        }
+
+        .check {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
 
 
+        .instructions {
+            display: inline-block;
+            align-items: center;
+            margin: 100px;
+
+        }
+
+        .ul-check {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .check {
+            margin-left: 100px;
+        }
+
+        .logo-aménagements {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 }
