@@ -30,3 +30,23 @@ h3,
     align-items: center;
     gap: 100;
 }
+
+.image-de-chambre {
+    height: 900px;
+    background-image: url(../../images/rooms/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex-collum
+}
+
+.blerg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chambre-deluxe,
+.aménagements {
+    padding: 20px;
+}
