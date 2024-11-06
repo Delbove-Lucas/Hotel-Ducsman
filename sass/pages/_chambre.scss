@@ -29,6 +29,20 @@ h3,
     display: inline-block;
     align-items: center;
     gap: 100;
+    margin: 100px;
+
+}
+
+#check-in ::after {
+    content: "";
+    display: block;
+    height: 5px;
+}
+
+#check-out ::after {
+    content: "";
+    display: block;
+    height: 5px;
 }
 
 .image-de-chambre {
@@ -50,4 +64,19 @@ h3,
 .aménagements {
     padding: 20px;
     margin: 100px;
+}
+
+.check {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.instructions {
+    display: inline-block;
+    align-items: center;
+    margin: 100px;
+
+
 }
