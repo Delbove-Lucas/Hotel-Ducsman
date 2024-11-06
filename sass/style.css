@@ -12,6 +12,7 @@ body {
   max-width: 100% !important;
   display: flex;
   flex-direction: row;
+  background-color: #1E1E1E;
 }
 
 .sidebar {
@@ -91,11 +92,23 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.head-btn {
+  margin-top: 20px;
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: 1px;
+}
+
 body main {
   max-width: 100%;
 }
 body main .img-header {
-  height: 700px;
+  height: 800px;
   background-image: url(../../images/slider/2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -116,6 +129,21 @@ body main .carouselle {
   justify-content: center;
   flex-direction: column;
 }
+body main .carouselle .sous-titres-header {
+  margin-top: 30px;
+  font-size: 0, 5em;
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: 2px;
+  color: white;
+}
+body main .carouselle .title-header {
+  font-size: 5em;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: 20px;
+  color: #FFF;
+}
 body main .container {
   background-color: #222222;
 }
@@ -125,26 +153,50 @@ body main .infos-rooms {
 body main .container {
   display: flex;
   flex-direction: row;
-  text-align: start;
-  justify-content: space-around;
+  align-items: center;
+  height: 600px;
   padding: 20px;
 }
 body main .container .into-para {
-  width: 50%;
+  margin-left: 80px;
+}
+body main .container .into-para .sous-title-container {
+  font-size: 1em;
+  color: #FFF;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 20px;
+}
+body main .container .into-para .title-container {
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  color: #FFF;
+}
+body main .container .into-para .para-container {
+  margin-top: 50px;
+  color: #919191;
+  font-family: "Bricolage Grotesque", sans-serif;
+  width: 700px;
 }
 body main .container .into-img {
-  width: 200px;
   display: flex;
   flex-direction: row;
+  gap: 50px;
 }
 body main .container .into-img .img-into {
-  width: 200px;
+  background-image: url(../../images/rooms/8.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 350px;
+  margin-top: 80px;
 }
-
-body {
-  background-color: #222222;
-  margin: 0;
-  padding: 0;
+body main .container .into-img .img-into2 {
+  background-image: url(../../images/rooms/2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 350px;
 }
 
 h1,
