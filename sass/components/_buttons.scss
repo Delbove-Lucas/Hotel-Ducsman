@@ -5,13 +5,14 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: $primary-font;
+    letter-spacing: 1px;
 }
 
-.head-btn{
+.head-btn {
     margin-top: 20px;
     width: 250px;
     height: 50px;
@@ -20,5 +21,5 @@
     color: #fff;
     font-size: 1em;
     font-family: $primary-font;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
 }

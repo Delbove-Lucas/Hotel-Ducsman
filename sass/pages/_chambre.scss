@@ -4,6 +4,32 @@ body {
 
         article {
 
+            h1,
+            h2,
+
+            .ti-facebook,
+            .ti-instagram,
+            .ti-twitter,
+            .ti-youtube,
+            .ti-pinterest {
+                color: white;
+            }
+
+            .doré,
+            .flaticon-group,
+            .flaticon-wifi,
+            .flaticon-clock-1,
+            .flaticon-breakfast,
+            .flaticon-towel,
+            .flaticon-swimming,
+            .ti-check {
+                color: #6E583B;
+            }
+
+            .texte {
+                color: #838383;
+            }
+
             header {
                 .chambre1 {
                     width: 100%;
@@ -13,80 +39,82 @@ body {
                     background-repeat: no-repeat;
                     background-size: cover;
                     @include flex-collum;
+
+                    .ti-star {
+                        text-align: center;
+                        color: $primary-color;
+                        font-size: 1.2em;
+                    }
+
+                    .hotel-luxe {
+                        margin-top: 30px;
+                        font-size: 0, 5em;
+                        font-family: $primary-font;
+                        letter-spacing: 2px;
+                        color: white;
+                        text-align: center;
+                    }
+
+                    .chambreluxe {
+                        font-size: 5em;
+                        text-align: center;
+                        font-family: $secondary-font;
+                        font-weight: 400;
+                        letter-spacing: 20px;
+                        color: #FFF;
+                    }
+
                 }
 
             }
 
+            .étage1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .chambre-deluxe,
+                .aménagements {
+                    padding: 20px;
+                    margin: 100px;
+                }
+
+                .duscman1 {
+                    font-size: 16px;
+                }
+
+                .titre-étage {
+                    font-size: 2em;
+                }
+            }
+
+            .logo-aménagements {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .check {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                margin-left: 100px;
+
+                .ul-check {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+            }
+
+            .instructions {
+                display: inline-block;
+                align-items: center;
+                margin: 100px;
+
+            }
         }
 
-        h1,
-        h2,
-        h3,
-        .ti-facebook,
-        .ti-instagram,
-        .ti-twitter,
-        .ti-youtube,
-        .ti-pinterest {
-            color: white;
-        }
-
-        .doré,
-        .flaticon-group,
-        .flaticon-wifi,
-        .flaticon-clock-1,
-        .flaticon-breakfast,
-        .flaticon-towel,
-        .flaticon-swimming,
-        .ti-check {
-            color: #6E583B;
-        }
-
-        .texte {
-            color: #838383;
-        }
-
-
-
-        .étage1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .chambre-deluxe,
-        .aménagements {
-            padding: 20px;
-            margin: 100px;
-        }
-
-        .check {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-
-        .instructions {
-            display: inline-block;
-            align-items: center;
-            margin: 100px;
-
-        }
-
-        .ul-check {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .check {
-            margin-left: 100px;
-        }
-
-        .logo-aménagements {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
     }
 }
