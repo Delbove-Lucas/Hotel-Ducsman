@@ -1,6 +1,6 @@
 body{
 
-  main{
+  .main-index{
     max-width: 100%;
 
     .img-header{
@@ -14,7 +14,7 @@ body{
 
     .ti-star{
       text-align: center;
-      color: #c2a505;
+      color: $primary-color;
       font-size: 1.2em;
     }
 
@@ -63,6 +63,8 @@ body{
           color: #FFF;
           font-family: $primary-font;
           margin-top: 20px;
+          letter-spacing: 5px;
+          color: $primary-color;
         }
 
         .title-container{
