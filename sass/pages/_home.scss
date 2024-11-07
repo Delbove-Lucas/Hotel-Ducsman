@@ -51,15 +51,14 @@
     }
 
     .container{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include flex;
       height: 600px;
+      padding: 0;
 
       .into-para{
-
-        margin-left: 80px;
-        
+        margin: 0;
+        padding: 0;
+        // width: 575px;
         .sous-title-container{
           font-size: 1em;
           color: #FFF;
@@ -82,7 +81,7 @@
           margin-top: 50px;
           color: #919191;
           font-family: $primary-font;
-          width: 700px;
+          width: 555px;
         }
       }
       .into-img{
@@ -113,7 +112,7 @@
 
       max-width: 100vw;
       .title-rooms{
-        margin-left: 130px;
+        margin-left: 170px;
         margin-top: 80px;
 
         h5{
@@ -121,7 +120,8 @@
           color: #FFF;
           font-family: $primary-font;
           margin-left: 5px;
-          letter-spacing: 10px;
+          letter-spacing: 15px;
+          font-weight: 400;
           color: $primary-color;
         }
   
@@ -243,13 +243,25 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding: 70px 0;
 
-      .infos-section1{
-        @include flex;
-        flex-direction: row;
-        width: 1300px;
-        height: 400px;
-        padding: 0;
+      .section-services{
+          background-color: #2B2B2B;
+          width: 1200px;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+      
+
+        .infos-section{
+          @include flex;
+          flex-direction: row;
+          width: 1300px;
+          height: 400px;
+          padding: 0;
 
         .img-bien-etre{
           background-image: url(../../images/spa/3.jpg);
@@ -267,7 +279,23 @@
           height: 100%;
         }
 
-        .para-restaurant{
+        .img-fitness{
+          background-image: url(../../images/spa/2.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 600px;
+          height: 100%;
+        }
+
+        .img-aquatique{
+          background-image: url(../../images/restaurant/1.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 600px;
+          height: 100%;
+        }
+
+        .para{
           width: 570px;
           height: 300px;
           @include flex-collum;
@@ -277,8 +305,9 @@
           
           h4{
             font-family: $primary-font;
-            font-weight: 400;
+            font-weight: 500;
             color: $primary-color;
+            letter-spacing: 2px;
           }
 
           h3{
@@ -296,5 +325,7 @@
           
         }
       }
-   }
+    }
+   
+  } 
 }
