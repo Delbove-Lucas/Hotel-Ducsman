@@ -27,6 +27,7 @@
             font-size: 1.8em;
             margin-bottom: 20px;
             color: #fff;
+            font-family: $secondary-font;
         }
 
         p {
@@ -43,7 +44,7 @@
 
             i {
                 font-size: 1.5em;
-                color: #b8860b;
+                color: #aa8453;
                 margin-right: 15px;
             }
 
@@ -52,12 +53,13 @@
                 color: #aaa;
                 margin: 0;
                 font-weight: normal;
+                font-family: $secondary-font;
             }
 
             p,
             a {
                 font-size: 1em;
-                color: #b8860b;
+                color: #aa8453;
                 margin-top: 5px;
                 text-decoration: none;
             }
@@ -72,6 +74,8 @@
             font-size: 1.8em;
             margin-bottom: 20px;
             color: #fff;
+            font-family: $secondary-font;
+
         }
 
         .form-contact {
@@ -95,6 +99,7 @@
                     background-color: #222;
                     color: #eee;
                     border-radius: 4px;
+                    font-family: $primary-font;
                 }
             }
 
