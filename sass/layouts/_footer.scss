@@ -6,7 +6,6 @@ footer {
     color: #b4b4b4;
     margin-top: 20px;
     font-family: $primary-font;
-    font-family: $secondary-font;
 
     .about,
     .footer-contact {
@@ -55,15 +54,18 @@ footer {
 
         .about {
             h2 {
-                font-size: 1.5em;
+                font-size: 2em;
                 color: #fff;
                 margin-bottom: 15px;
+                font-family: $secondary-font;
+
             }
 
             p {
                 color: #bbb;
                 line-height: 1.6;
                 margin-bottom: 10px;
+                font-family: $primary-font;
             }
         }
 
@@ -71,25 +73,31 @@ footer {
             text-align: left;
 
             h2 {
-                font-size: 1.5em;
+                font-size: 2em;
                 color: #fff;
                 margin-bottom: 15px;
+                font-family: $secondary-font;
             }
 
             address {
+                font-size: 1.3em;
                 font-style: normal;
-                color: #ddd;
+                color: #adadad;
                 margin-bottom: 10px;
             }
 
             p {
-                color: #b8860b;
+                font-size: 2em;
+                color: #fff;
                 margin: 5px 0;
+                font-family: $primary-font;
             }
 
             a {
-                color: #b8860b;
+
+                color: #fff;
                 text-decoration: none;
+                font-family: $primary-font;
             }
 
             .social-media {
