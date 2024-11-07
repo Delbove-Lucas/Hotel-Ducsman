@@ -3,8 +3,10 @@ footer {
     justify-content: space-between;
     padding: 20px 0;
     font-size: 0.9em;
-    color: #bbb;
+    color: #b4b4b4;
     margin-top: 20px;
+    font-family: $primary-font;
+    font-family: $secondary-font;
 
     .about,
     .footer-contact {
@@ -16,10 +18,17 @@ footer {
         width: 100%;
         text-align: center;
         font-size: 0.8em;
-        color: #777;
+        color: #f0eeee;
         background-color: #1e1e1e;
         padding: 15px 20px;
         margin-top: auto;
+        font-family: $primary-font;
+    }
+
+    em {
+        font-style: normal;
+        color: #b4b4b4;
+        font-family: $primary-font;
     }
 
 }

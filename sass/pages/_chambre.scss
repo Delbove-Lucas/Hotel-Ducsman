@@ -1,6 +1,5 @@
-body {
-
     .main-chambre {
+        background-color: #222222;
 
         article {
 
@@ -39,6 +38,7 @@ body {
                     background-repeat: no-repeat;
                     background-size: cover;
                     @include flex-collum;
+                    filter: brightness(80%);
 
                     .ti-star {
                         text-align: center;
@@ -62,6 +62,7 @@ body {
                         font-weight: 400;
                         letter-spacing: 20px;
                         color: #FFF;
+                        text-transform: uppercase
                     }
 
                 }
@@ -129,4 +130,3 @@ body {
         }
 
     }
-}
