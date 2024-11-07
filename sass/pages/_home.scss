@@ -23,7 +23,7 @@
       margin-top: 30px;
       font-size: 0,5em;
       font-family: $primary-font;
-      letter-spacing: 2px;
+      letter-spacing: 5px;
       color: white;
     }
     .title-header{
@@ -122,6 +122,25 @@
       @include flex-row;
       gap: 100px;
       margin-top: 50px;
+
+      button{
+        position: relative;
+        left: 75%;
+        bottom: 80%;
+        transform: rotate(-90deg);
+        height: 40px;
+        width: 90px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: $primary-font;
+        font-size: 1em;
+      }
+
+      button:hover{
+        cursor: pointer;
+      }
+      
       h4{
         color: #fff;
         margin-left: 15px;
@@ -134,6 +153,7 @@
         color: #fff;
         margin-left: 18px;
         font-family: $primary-font;
+        font-weight: 600;
       }
       .img-1{
         background-image: url(../../images/rooms/1.jpg);
@@ -173,6 +193,24 @@
       @include flex-row;
       gap: 30px;
       margin-top: 30px;
+
+      button{
+        position: relative;
+        left: 85%;
+        bottom: 73%;
+        transform: rotate(-90deg);
+        height: 40px;
+        width: 90px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: $primary-font;
+        font-size: 1em;
+      }
+
+      button:hover{
+        cursor: pointer;
+      }
       h4{
         color: #fff;
         margin-left: 15px;
@@ -185,6 +223,7 @@
         color: #fff;
         margin-left: 18px;
         font-family: $primary-font;
+        font-weight: 600;
       }
       .img-4{
         background-image: url(../../images/rooms/4.jpg);
@@ -411,6 +450,162 @@
           font-family: $primary-font;
         }
       }
+    }
+  }
+
+  .serviceplus{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+    padding-left: 90px;
+    margin-bottom: 50px;
+    gap: 30px;
+
+    h2{
+      font-size: 2.8em;
+      font-family: $secondary-font;
+      color: #fff;
+    }
+
+    .block-services1{
+      display: flex;
+      flex-direction: row;
+      
+      gap: 30px;
+
+      h4{
+        font-size: 1.2em;
+        color: #fff;
+        padding-left: 20px;
+      }
+      p{
+        font-family: $primary-font;
+        font-weight: 400;
+        color: #919191;
+        line-height: 30px;
+        padding-left: 20px;
+      }
+
+      .transfert{
+        width: 400px;
+        height: 280px;
+        border: 1px solid #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+
+        .flaticon-world{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
+      }
+
+      .parking{
+        width: 400px;
+        border: 1px solid #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+
+        .flaticon-car{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
+      }
+
+      .room-service{
+        width: 400px;
+        border: 1px solid #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+
+        .flaticon-bed{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .block-services2{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      p{
+        font-family: $primary-font;
+        font-weight: 400;
+        color: #919191;
+        line-height: 30px;
+        padding-left: 20px;
+      }
+
+      h4{
+        font-size: 1.2em;
+        color: #fff;
+        padding-left: 20px;
+      }
+
+      .piscine{
+        width: 400px;
+        height: 250px;
+        border: 1px solid #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+
+        .flaticon-swimming{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
+      }
+
+      .acces-internet{
+        width: 400px;
+        height: 250px;
+        border: 1px solid #3b3b3b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 10px;
+
+        .flaticon-wifi{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .petit-dej{
+      width: 400px;
+      height: 250px;
+      border: 1px solid #3b3b3b;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 10px;
+
+        .flaticon-breakfast{
+          font-size: 4em;
+          margin-top: 20px;
+          color: $primary-color;
+          padding-left: 20px;
+        }
     }
   }
 }
