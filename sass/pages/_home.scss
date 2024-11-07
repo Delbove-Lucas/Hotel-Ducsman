@@ -53,6 +53,7 @@
         font-size: 1em;
         color: #FFF;
         font-family: $primary-font;
+        font-weight: 400;
         margin-top: 20px;
         margin-left: 5px;
         letter-spacing: 8px;
@@ -293,7 +294,6 @@
 
   .section-option{
     display: flex;
-    background-color: #919191;
     height: 500px;
     align-items: center;
     justify-content: space-around;
@@ -303,20 +303,24 @@
       flex-direction: column;
       justify-content: start;
       margin-left: 30px;
+      margin-bottom: 70px;
 
       h2{
         font-size: 2.8em;
         font-family: $secondary-font;
+        color: #fff;
       }
 
       .para-option{
         margin-top: 30px;
         margin-left: 0;
         line-height: 25px;
+        color: #919191;
       }
 
       p{
         font-family: $primary-font;
+        color: #919191;
         margin-top: 20px;
         margin-left: 40px;
       }
@@ -333,6 +337,80 @@
         color: $primary-color;
       }
 
+    }
+
+    .block-price{
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      .ti-check{
+        color: $primary-color;
+        margin-right: 10px;
+      }
+
+      .ti-close{
+        color: #919191;
+        margin-right: 10px;
+      }
+
+      .petit-dej{
+        background-color: #2B2B2B;
+        height: 300px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 40px;
+
+        .prix{
+          font-family: $secondary-font;
+          font-weight: 500;
+          font-size: 2.6em;
+          color: $primary-color;
+        }
+
+        h4{
+          font-size: 1.7em;
+          font-family: $secondary-font;
+          color: #fff;
+        }
+
+        p{
+          color: #919191;
+          font-family: $primary-font;
+        }
+      }
+  
+      .coffe-fort{
+        background-color: #2B2B2B;
+        height: 300px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding-left: 40px;
+
+        .prix{
+          font-family: $secondary-font;
+          font-weight: 500;
+          font-size: 2.6em;
+          color: $primary-color;
+        }
+
+        h4{
+          font-size: 1.7em;
+          font-family: $secondary-font;
+          color: #fff;
+        }
+
+        p{
+          color: #919191;
+          font-family: $primary-font;
+        }
+      }
     }
   }
 }
