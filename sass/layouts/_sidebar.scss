@@ -5,6 +5,12 @@
   color: white;
   padding: 10px;
 
+  .flaticon-menu{
+    position: absolute;
+    display: none;
+    transition: 300ms ease-out;
+  }
+
   .star {
     text-align: center;
     color: $primary-color;

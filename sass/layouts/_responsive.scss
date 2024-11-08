@@ -3,6 +3,23 @@
     @include flex-collum;
     width: 440px;
 
+    .sidebar{
+
+      .flaticon-menu{
+        display: block;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 5px;
+      }
+
+      .menu{
+        display: none;
+      }
+
+      .contact-info{
+        display: none;
+      }
+    }
 
     .main-index{
       width: 440px;
@@ -13,13 +30,109 @@
 
       .img-header{
         width: 100%;
-        height: auto;
+        height: 300px;
       }
-    }
 
-    .container{
-      @include flex-collum
+      .carouselle{
+        width: 440px;
+        
+        .title-header{
+          font-size: 1.7em;
+          margin-top: 20px;
+        }
+
+        .head-btn{
+          width: 200px;
+        }
+
+        
+      }
+      .container{
+        width: 100%;
+        height: auto;
+        @include flex-collum;
+
+        .into-para{
+
+          .ti-star{
+            font-size: 1em;
+          }
+
+          .sous-title-container{
+            text-align: center;
+            font-size: 1em;
+          }
+          .title-container{
+            font-size: 2em;
+            text-align: center;
+          }
+
+          .para-container{
+            width: 350px;
+            text-align: start;
+            margin: 0;
+          }
+        }
+
+        .into-img{
+          width: 100%;
+          @include flex-collum;
+          .img-into{
+            width: 400px;
+            margin-top: 20px;
+          }
+
+          .img-into2{
+            width: 400px;
+            margin: 0;
+          }
+        }
+
+        
+      }
+      .infos-rooms{
+        @include flex-collum;
+        width: 100%;
+
+        .title-rooms{
+          width: 100%;
+
+          h2{
+            font-size: 1.7em;
+          }
+        }
+        
+        .rooms-img-top{
+          @include flex-collum;
+
+          .img-1{
+            width: 400px;
+            margin: 0;
+          }
+
+          .img-2{
+            width: 400px;
+            margin: 0;
+          }
+
+          .img-3{
+            width: 400px;
+            margin: 0;
+          }
+        }
+
+        .room-img-bottom{
+          @include flex-collum;
+
+          .img-4{
+            width: 400px;
+          }
+
+          .img-5{
+            width: 400px;
+          }
+        }
+      }
+      } 
     }
-  
   }
-}
